@@ -168,7 +168,17 @@ section.status{
     .container{
         padding: 20px;
     }
-    
+    .pizza-list{
+        h1{
+            font-size: 14px;
+        }
+        span{
+            font-size: 12px;
+        }
+    }
+    .image-cart{
+        width: 50px;
+    }
 }
 @media screen and (max-width: 576px){
     .status-box ul li span:before {

@@ -24,17 +24,15 @@
         </div>
 
         <% for(let pizza of cartPizza) { %> 
-        <div class="pizza-list mt-5">
+        <div class="pizza-list mt-5 mb-2">
             <div class="flex items-center">
-                <img class="w-24" src="/img/<%= pizza.item.image %>" alt="pizza">
+                <img class="w-24 image-cart" src="/img/<%= pizza.item.image %>" alt="pizza">
                 <div class=" ml-4 flex-1">
                     <h1><%= pizza.item.name %></h1>
                     <span><%= pizza.size %></span>
                 </div>
                 
                 <span class="flex-1"><%= pizza.qty %>  qty</span>
-
-                <span class="flex-1"><%= pizza.item.price %> / Pcs</span>
 
                 <span class="font-bold text-lg">Rp. <%= pizza.totalPrice %></span>
             </div>
